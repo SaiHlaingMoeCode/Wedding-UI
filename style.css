@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,300;1,200;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,300;1,200;1,400;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --text-color: rgb(133, 221, 78);
+    --bg-color: rgb(242, 235, 235);
+    --main-color: black;
+}
+
+nav {
+    /* justify-content: center;
+    align-items: center; */
+    height: auto;
+    background-color: rgb(95, 165, 188);
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.navbar-brand h4 {
+    color: darkviolet;
+    font-size: 40px;
+    padding: 0px 20px;
+    animation: swing;
+    animation-duration: 1s;
+}
+
+.navbar-brand h4:hover {
+    animation: r;
+    cursor: pointer;
+}
+
+.item a {
+    padding: 0px 7px;
+    color: var(--bg-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 17px;
+    position: relative;
+    text-decoration: none;
+}
+
+.item a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 2px;
+    bottom: -1px;
+    transition: 1s;
+    width: 0%;
+    left: 0;
+}
+
+.item a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    border: 1px solid white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: darkviolet;
+}
+
+
+/* section one  */
+
+.sectOneText {
+    color: rgb(4, 112, 112);
+}
+
+
+/* section three */
+
+.wedding_photo,
+.wedding_footer {
+    display: flex;
+    padding: 10px;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid var(--bg-color);
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.box .box-img img {
+    width: 350px;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.box-img img:hover {
+    transform: scale(0.9);
+    filter: brightness(0.9);
+}
+
+
+/* footer  */
+
+.l-footer a {
+    color: black
+}
+
+.l-footer a .logoOne:hover {
+    color: blue;
+}
+
+.l-footer a .logoTwo:hover {
+    color: red;
+}
+
+.l-footer a .logoThree:hover {
+    color: rgb(15, 170, 221);
+}
+
+.l-footer a .logoFour:hover {
+    color: rgb(241, 11, 11);
+}
